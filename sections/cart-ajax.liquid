@@ -1,0 +1,19 @@
+<template data-html="list">
+  {% render 'cart-item-list' %}
+</template>
+
+<template data-html="cart_total">
+  {{- cart.total_price | money -}}
+</template>
+
+<template data-html="cart_three_percent">
+    {{- cart.threePercent | money -}}
+</template>
+
+<template data-html="cart_total_plus_three_percent">
+  {{- cart.cartTotal | money -}}
+</template>
+
+<template data-html="discounts">
+  {% render 'cart-discounts' %}
+</template>

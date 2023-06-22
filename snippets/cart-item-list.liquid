@@ -1,0 +1,12 @@
+<ul class="cartitems--list" data-cart-item-list>
+    {% for item in cart.items %}
+      {% unless item.product.handle contains 'shipping-warranty'%}
+        {%
+          render 'cart-item',
+          item: item,
+          show_sku: show_sku,
+          item_index: forloop.index,
+        %}  
+      {% endunless %}
+    {% endfor %}
+</ul>

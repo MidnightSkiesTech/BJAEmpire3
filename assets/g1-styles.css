@@ -1,0 +1,35 @@
+#ftfy_shipping{
+    margin-top: 15px;
+}
+#ftfy_shipping_insurance{
+    padding: 30px !important;
+    border: 2px dashed red;
+    border-radius: 8px;
+}
+.hide-g1-popup .ftfy_insurance_infoicon{
+  display: none;
+}
+.cart--section .cart-title-right{
+    gap: 15px;
+}
+.productgrid--item[data-product-quickshop-url*="shipping-warranty"]{
+  display: none;
+}
+
+/* Hide the warranty product inside the snize widget */
+li[id="snize-product-7946979279096"]{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .cart--section .cart-title{
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  }
+  
+  .cart--section .cart-title-right{
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+}
